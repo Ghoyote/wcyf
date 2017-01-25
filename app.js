@@ -13,7 +13,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
-app.locals.title = process.env.HEADING_WCYF || 'Worldwide Christian Youth Fellowship';
+app.locals.title = process.env.HEADING_WCYF;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
