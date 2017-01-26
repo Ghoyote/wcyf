@@ -3,7 +3,10 @@
 		<div class="header-content-inner">
 			<h1 id="homeHeading">{{{title}}}</h1>
 			<hr>
-			<p>Worldwide Christian Youth Fellowship (WCYF) is a Youth Revival Ministry that God is using to draw our generation into deeper fellowship with Himself and raise to a God-fearing and Holy Spirit-filled youth who will stand for nothing but the Truth, which is the Word of God, in these end times as we prepare for the return of the Lord Jesus Christ. </p>
+			<p>Worldwide Christian Youth Fellowship (WCYF) is a Youth Revival Ministry that God is using to draw our generation
+				into deeper fellowship with Himself and raise to a God-fearing and Holy Spirit-filled youth who will stand for
+				nothing but the Truth, which is the Word of God, in these end times as we prepare for the return of the Lord Jesus
+				Christ. </p>
 			<a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
 		</div>
 	</div>
@@ -15,7 +18,10 @@
 			<div class="col-lg-8 col-lg-offset-2 text-center">
 				<h2 class="section-heading">About Us!</h2>
 				<hr class="light">
-				<p class="text-faded">W.C.Y.F seeks to revive our generation & restore unity in the body of Christ. Our vision is to revive and prepare our generation and future generations for the coming of our Lord Jesus Christ. We are dedicated to transforming our generation by the Word of God and by the Power of the Holy Spirit to worship God in Spirit and in Truth.</p>
+				<p class="text-faded">W.C.Y.F seeks to revive our generation & restore unity in the body of Christ. Our vision is
+					to revive and prepare our generation and future generations for the coming of our Lord Jesus Christ. We are
+					dedicated to transforming our generation by the Word of God and by the Power of the Holy Spirit to worship God
+					in Spirit and in Truth.</p>
 				<a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Read more!</a>
 			</div>
 		</div>
@@ -37,7 +43,14 @@
 				<div class="service-box">
 					<i class="fa fa-4x fa-sun-o text-primary sr-icons"></i>
 					<h3>Counseling &amp; Deliverance</h3>
-					<p class="text-muted">Our templates are updated regularly so they don't break.</p>
+					<p class="text-muted">Our templates are updated regularly so they don't break.
+						<a href="#read01" data-toggle="collapse">Read More</a>
+					<small class="row collapse text-center readmore" id="read01">
+						This is the functionality I was talking about, collapsible text.
+					</small>
+
+					</p>
+
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6 text-center">
@@ -166,7 +179,8 @@
 	<div class="container text-center">
 		<div class="call-to-action">
 			<h2>Free Download at Start Bootstrap!</h2>
-			<a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a>
+			<a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download
+				Now!</a>
 		</div>
 	</div>
 </aside>
@@ -178,16 +192,39 @@
 				<h2 class="section-heading">Let's Get In Touch!</h2>
 				<hr class="primary">
 				<p>Join us to worship Our God and our King Lord Jesus together with our Spirit-filled choir.
-worship with us and become a partner today!</p>
+					worship with us and become a partner today!</p>
 			</div>
 			<div class="col-lg-4 col-lg-offset-2 text-center">
 				<i class="fa fa-phone fa-3x sr-contact"></i>
 				<p>(+233)505870899</p>
 			</div>
 			<div class="col-lg-4 text-center">
-				<i class="fa fa-envelope-o fa-3x sr-contact"></i>
-				<p><a href="mailto:worldwidechristianyouthfellowship@gmail.com">worldwidechristianyouthfellowship@gmail.com</a></p>
+				<a href="#contact-form" data-toggle="collapse" class="toggle-form"><i
+						class="fa fa-envelope-o fa-3x sr-contact"></i><br>
+					<small>Contact Us</small>
+				</a>
+				<form class="row collapse in form-group form-group-sm form-group-lg form-contact" method="post" action="sendmail"
+				      id="contact-form">
+					<label for="name"><span>Name: </span> <input type="text" class="form-control" name="name" id="name" required></label>
+					<label for="name">Email Address: <input type="email" class="form-control" name="email" id="email"></label>
+					<label for="category select">Category
+						<select class="form-group form-control text-left" name="category" id="category" required>
+							<option class="text-muted">Select A Category</option>
+							<option value="testimony">Testimony</option>
+							<option value="">Saab</option>
+							<option value="mercedes">Mercedes</option>
+							<option value="audi">Audi</option>
+						</select>
+					</label>
+
+					<label for="message">Message: <textarea class="form-control" name="message" required rows="15"
+					                                        id="message"></textarea></label>
+					<p class="submit">
+						<input class="btn btn-default btn-xl sr-button pull-right" type="submit" value="Submit">
+					</p>
+				</form>
 			</div>
+
 		</div>
 	</div>
 </section>

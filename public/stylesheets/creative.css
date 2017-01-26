@@ -2,7 +2,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-} 
+}
 body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
@@ -10,7 +10,7 @@ hr {
   border-color: #F05F40;
   border-width: 3px;
   max-width: 50px;
-} 
+}
 hr.light {
   border-color: white;
 }
@@ -205,6 +205,29 @@ header .header-content .header-content-inner p {
 }
 .section-heading {
   margin-top: 0;
+}
+.form-contact .form-control {
+  border: 2px solid black;
+}
+.form-contact label {
+  text-align: left;
+  text-indent: 8px;
+}
+.select {
+  width: 100%;
+}
+.submit {
+  margin-right: 50px;
+}
+.submit input {
+  border: 2px solid black;
+  border-radius: 15px;
+}
+.toggle-form small {
+  color: #000;
+}
+.readmore {
+  margin: 0 5%;
 }
 .service-box {
   max-width: 400px;
