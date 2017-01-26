@@ -11,7 +11,7 @@ var email = new SchemaObject({
 	message: String
 },{
 	keyIgnoreCase: true,
-	strict: false
+	strict: true
 	}
 );
 
