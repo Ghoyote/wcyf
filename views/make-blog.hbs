@@ -1,0 +1,28 @@
+<script>
+	tinymce.init({
+		selector: '#mytextarea',
+		plugins: 'advlist autolink link image lists charmap print preview code',
+		toolbar: 'undo redo | styleselect | bold italic | link image',
+		menubar: 'file edit view insert format',
+		menu: {
+
+		},
+
+	});
+</script>
+
+
+
+<header>
+	<div class="header-content">
+		<div class="header-content-inner">
+			<h1 id="homeHeading">{{{title}}}</h1>
+			<hr>
+			<form method="post" action="create-blog-post" class="form-group">
+				<textarea id="mytextarea" name="content" style="color: black">Hello, World!</textarea>
+				<input type="submit" value="submit">
+			</form>
+			<!--<a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>-->
+		</div>
+	</div>
+</header>

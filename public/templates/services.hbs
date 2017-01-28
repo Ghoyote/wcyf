@@ -1,0 +1,12 @@
+<div class="container">
+	<div class="row">
+		<div class="col-lg-3 col-md-6 text-center" ng-repeat="serv in services.service">
+			<div class="service-box">
+				<i ng-class="serv.icon"></i>
+				<h3 ng-bind="serv.type"></h3>
+				<p class="text-muted" ng-bind="serv.summary"></p>
+			</div>
+		</div>
+
+	</div>
+</div>
