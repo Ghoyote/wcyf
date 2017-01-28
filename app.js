@@ -11,9 +11,10 @@ var SchemaObject = require('schema-object');
 // store routes
 var index = require('./routes/index');
 var users = require('./routes/users');
+var make_blog = require('./routes/make-blog');
 
 var app = express();
-app.locals.title = process.env.HEADING_WCYF;
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -31,6 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/admin/', make_blog);
 
 
 // catch 404 and forward to error handler

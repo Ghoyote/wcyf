@@ -4,7 +4,9 @@ var MailIn = require('../models/email.model');
 var date=new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '');
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index');
+  res.render('index', {
+  	title: process.env.HEADING_WCYF
+  });
 });
 router.post('/sendmail', function (req, res, next) {
 	MailIn = req.body;
