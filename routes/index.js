@@ -9,9 +9,15 @@ router.get('/', function(req, res, next) {
   });
 });
 router.post('/sendmail', function (req, res, next) {
-	MailIn = req.body;
-	MailIn.date = date;
-	console.log(MailIn);
-	res.redirect('/');
+	var newMail = new MailIn({
+		name: req.body.name,
+		email:req.body.email,
+		category:req.body.category,
+		date: date,
+		message:req.body.message
+	});
+	
+	console.log(newMail);
+	res.send(newMail);
 });
 module.exports = router;

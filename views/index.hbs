@@ -169,21 +169,23 @@
 			<div class="col-lg-8 col-lg-offset-2 text-center">
 				<form class="row collapse form-group form-group-sm form-group-lg form-contact" method="post" action="sendmail"
 				      id="contact-form">
-					<label for="name" class="col-lg-6"><span>Name: </span> <input type="text" class="form-control min-form" name="name" id="name" required></label>
-					<label for="email" class="col-lg-6">Email Address: <input type="email" class="form-control" name="email" id="email"></label>
+					<label for="name" class="col-lg-6"><span>Name: </span> <input type="text" class="form-control min-form"
+					                                                              name="name" id="name" required></label>
+					<label for="email" class="col-lg-6">Email Address: <input type="email" class="form-control" name="email"
+					                                                          id="email"></label>
 					<label for="category" class="col-lg-12 category">Category
-						<select class="form-group form-control text-left col-lg-4" name="category" id="category" required>
+						<select class="form-group form-control text-left col-lg-4 text-lowercase" name="category" id="category" required>
 							<option class="text-muted">Please select a Category</option>
 							<option value="testimony">Testimony</option>
-							<option value="">Saab</option>
-							<option value="mercedes">Mercedes</option>
-							<option value="audi">Audi</option>
+							<option value="camp">Camp and Conference Registration</option>
+							<option value="donate">Donation</option>
+							<option value="partner">PARTNERSHIP</option>
 						</select>
 					</label>
-
+					
 					<label for="message" class="col-lg-12">Message: <textarea class="form-control message" name="message" required
-					                                                         rows="10" cols="25"
-					                                        id="message"></textarea></label>
+					                                                          rows="10" cols="25"
+					                                                          id="message"></textarea></label>
 					<p class="submit">
 						<input class="btn btn-default btn-xl sr-button pull-right" type="submit" value="Submit">
 					</p>

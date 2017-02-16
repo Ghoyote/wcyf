@@ -11,8 +11,9 @@ router.get('/blog', function (req, res, next) {
 });
 
 router.post('/create-blog-post', function (req, res, next) {
-	var cont = req.body.content;
-	res.send(cont);
+	
+	
+	res.send(req.body);
 	console.log(cont);
 });
 
