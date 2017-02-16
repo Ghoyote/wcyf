@@ -3,10 +3,7 @@
 		selector: '#mytextarea',
 		plugins: 'advlist autolink link image lists charmap print preview code',
 		toolbar: 'undo redo | styleselect | bold italic | link image',
-		menubar: 'file edit view insert format',
-		menu: {
-
-		},
+		menubar: 'file edit view insert format'
 
 	});
 </script>
@@ -19,8 +16,14 @@
 			<h1 id="homeHeading">{{{title}}}</h1>
 			<hr>
 			<form method="post" action="create-blog-post" class="form-group">
-				<textarea id="mytextarea" name="content" style="color: black">Hello, World!</textarea>
-				<input type="submit" value="submit">
+				<fieldset  class="form-group">
+					<input id="title" class="form-control" name="title" placeholder="Title" required></fieldset>
+				<fieldset class="form-group">
+					<input class="form-control" id="description" name="description" placeholder="Description" required></fieldset>
+				<fieldset class="form-group"><textarea class="form-control" id="mytextarea" name="content" rows="20" style="color: black">Hello, World!</textarea>
+				</fieldset>
+				<fieldset class="form-group"><input type="submit" class="btn btn-default pull-right" value="submit"></fieldset>
+				
 			</form>
 			<!--<a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>-->
 		</div>
