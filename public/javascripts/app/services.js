@@ -1,5 +1,5 @@
 (function () {
-	var app = angular.module('services-panel', []);
+	var app = angular.module('services-panel', ['resource-panel']);
 	
 	
 	app.directive('serviceSection', function () {
