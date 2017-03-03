@@ -7,7 +7,6 @@ body {
   height : 100%;
   width  : 100%;
 }
-
 body {
   .serif-font;
 }
@@ -167,10 +166,11 @@ header {
   min-height          : auto;
   .background-cover;
   background-position : center;
-  background-image    : url('../images/header.jpg');
+  background-image    : url('../images/header.JPG');
   text-align          : center;
   color               : white;
   .header-content {
+    background-color:rgba(0,0,0,0.2);
     position   : relative;
     text-align : center;
     padding    : 100px 15px 100px;
@@ -272,12 +272,17 @@ width: 78%;
     margin-bottom : 0;
   }
 }
-
+.port-item{
+  background-color:rgb(255,255,255);
+  border:2px solid black;
+  box-shadow:3px 3px 3px 3px rgba(255,255,255,0.1);
+}
 .portfolio-box {
   position  : relative;
   display   : block;
   max-width : 650px;
-  margin    : 0 auto;
+  margin    : 30px auto;
+
   .portfolio-box-caption {
     color      : white;
     opacity    : 0;
@@ -318,6 +323,7 @@ width: 78%;
   &:focus {
     outline : none;
   }
+
   @media (min-width : 768px) {
     .portfolio-box-caption {
       .portfolio-box-caption-content {
