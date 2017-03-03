@@ -13,14 +13,18 @@
 <header>
 	<div class="header-content">
 		<div class="header-content-inner">
-			<h1 id="homeHeading">{{{title}}}</h1>
+			<h1 id="homeHeading cblog">{{{title}}}</h1>
 			<hr>
 			<form method="post" action="create-blog-post" class="form-group">
 				<fieldset  class="form-group">
+					<input type="file" id="image" class="btn btn-default" name="image" placeholder="Image" required></fieldset>
+				<fieldset  class="form-group">
 					<input id="title" class="form-control" name="title" placeholder="Title" required></fieldset>
+				<fieldset  class="form-group">
+					<input id="podcast" class="form-control" name="podcast" placeholder="podcast"></fieldset>
 				<fieldset class="form-group">
-					<input class="form-control" id="description" name="description" placeholder="Description" required></fieldset>
-				<fieldset class="form-group"><textarea class="form-control" id="mytextarea" name="content" rows="20" style="color: black">Hello, World!</textarea>
+					<input class="form-control" id="description" name="description" placeholder="Description" maxlength="80" required></fieldset>
+				<fieldset class="form-group"><textarea class="form-control" id="mytextarea" name="content" rows="10" style="color: black">Hello, World!</textarea>
 				</fieldset>
 				<fieldset class="form-group"><input type="submit" class="btn btn-default pull-right" value="submit"></fieldset>
 				
