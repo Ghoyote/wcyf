@@ -8,9 +8,9 @@
 		</div>
 		<div class="row no-gutter popup-gallery" style="margin-bottom:50px">
 			<div class="col-lg-4 col-sm-6 port-item" ng-repeat="res in resources.resource | limitTo: 6">
-				<a ng-href="res.image.full">
+				<a ng-href="res.image">
 					<div class="portfolio-box col-sm-6">
-						<img ng-src="{[{res.image.thumb}]}" class="img-responsive" alt="">
+						<img ng-src="{[{res.image}]}" class="img-responsive" alt="">
 					</div>
 					<blockquote class="col-sm-6" style="color:black" ng-bind="res.description">One must shape the believer in order to hurt the master of atomic anger.</blockquote>
 				</a>
