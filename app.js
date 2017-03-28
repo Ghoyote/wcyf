@@ -17,7 +17,8 @@ var make_blog = require('./routes/make-blog');
 var app = express();
 
 
-mongoose.connect(process.env.MONGODB_URI);
+// mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect('mongodb://localhost/wcyf')
 mongoose.connection.on('connected', function () {
 	console.log('Connected to mongoose');
 });
@@ -53,7 +54,7 @@ app.use(stormpath.init(app, {
 
 app.use('/', index);
 app.use('/users', users);
-app.use('/admin/',stormpath.loginRequired, make_blog);
+app.use('/admin/',stormpath.authenticationRequired, make_blog);
 
 
 // catch 404 and forward to error handler
