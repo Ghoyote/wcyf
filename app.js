@@ -9,6 +9,7 @@ var SchemaObject = require('schema-object');
 var mongoose = require('mongoose');
 var stormpath = require('express-stormpath');
 
+
 // store routes
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -18,7 +19,7 @@ var app = express();
 
 
 // mongoose.connect(process.env.MONGODB_URI);
-mongoose.connect('mongodb://localhost/wcyf')
+mongoose.connect('mongodb://localhost/wcyf');
 mongoose.connection.on('connected', function () {
 	console.log('Connected to mongoose');
 });
@@ -51,6 +52,7 @@ app.use(stormpath.init(app, {
 		}
 	}
 }));
+
 
 app.use('/', index);
 app.use('/users', users);
