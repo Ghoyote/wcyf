@@ -67,9 +67,11 @@ db.once('open', function () {
 		dbxCont.forEach(function (item, index, array) {
 			dbx.filesUpload({ path: item.loc, contents: item.conts }).then(function (response) {
 				if ( item.type == 'image' ) {
-					newResource.image = imagename;
+					newResource.image.name = imagename;
+					newResource.image.id = response.id;
 				} else if ( item.type == 'text' ) {
-					newResource.path = filename;
+					newResource.path.name = filename;
+					newResource.path.id = response.id;
 				}
 				console.log(response);
 				if(index === array.length - 1) {

@@ -18,8 +18,8 @@ var make_blog = require('./routes/make-blog');
 var app = express();
 
 
-// mongoose.connect(process.env.MONGODB_URI);
-mongoose.connect('mongodb://localhost/wcyf');
+mongoose.connect(process.env.MONGODB_URI);
+// mongoose.connect('mongodb://localhost/wcyf');
 mongoose.connection.on('connected', function () {
 	console.log('Connected to mongoose');
 });
