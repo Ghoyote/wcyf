@@ -45,17 +45,11 @@ db.once('open', function() {
 		};
 		transporter.sendMail(mailOptions, function (error, info) {
 			if ( error ) {
-				res.render('index', {
-					title: process.env.HEADING_WCYF,
-					state:{success:false}
-				});
+				res.json(error.message);
 				console.log(error);
 			}else {
 				console.log('Message sent\nid: %s\nresponse: %s', info.messageId, info.response);
-				res.render('index', {
-					title: process.env.HEADING_WCYF,
-					state:{success:true}
-				});
+				res.json("message sent successfully")
 			}
 		});
 	});
